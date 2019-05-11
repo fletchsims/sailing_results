@@ -1,13 +1,12 @@
+import zlib
+import codecs
+import os
+import io
+import pandas as pd
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from sqlalchemy import create_engine
 from lib.constants import psql, output_path
-import pandas as pd
-import zlib
-import codecs
-import os
-import psycopg2
-import io
 
 
 class ScrapeTechScoreResults:
